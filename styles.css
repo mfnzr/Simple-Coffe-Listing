@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+:root {
+    --background-1: #111315;
+    --background-2: #1B1D1F;
+    --branco: #FEF7EE;
+    --cinza: #6F757C;
+    --verde: #BEE3CC;
+    --vermelho: #ED735D;
+    --fonte-principal: 'DM Sans', 'sans serif';
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: url(img/bg-cafe.jpg);
+    background-repeat: no-repeat;
+    background-color: var(--background-1);
+    background-size:contain
+}
+
+.cardapio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: var(--background-2);
+    margin: 5.5em 7em;
+    border-radius: 10px;
+    font-family: 'DM Sans';
+}
+
+.vetor-cardapio {
+    background: url(img/vector.svg);
+    background-repeat: no-repeat;
+    background-position: 139%;
+}
+
+.titulo {
+    color: var(--branco);
+    font-size: 2em;
+    font-weight: 800;
+    padding: 3em 1em 0.5em 2em;
+}
+
+.texto {
+    color: var(--cinza);
+    font-size: 1em;
+    font-weight: 600;
+    padding: 0 2em 0 2em;
+}
+
+.botoes {
+    padding-bottom: 1em;
+}
+
+.botao-todos {
+    color: var(--branco);
+    background-color: var(--cinza);
+    border: none;
+    border-radius: 7px;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 0.7em;
+    margin: 1.5em;
+}
+
+.botao-avaliacao {
+    background-color: transparent;
+    border: none;
+    color: var(--branco);
+    font-size: 14px;
+    font-weight: 600;
+
+}
+
+.opcao-de-cafe {
+    display: flex;
+    padding-top: 0.5em;
+    justify-content: space-between;
+}
+
+.cafe {
+    color: var(--branco);
+    font-weight: 800;
+    
+}
+
+.preco {
+    background-color: var(--verde);
+    color: var(--background-1);
+    font-size: 12px;
+    font-weight: 900;
+    padding: 0.3em 0.6em;
+    border-radius: 3px;
+}
+
+.estrelas {
+    display: flex;
+    margin-top: 0.5em;
+    margin-bottom: 5em;
+}
+
+.total-de-votos {
+    color: var(--branco);
+    font-size: 14px;
+    font-weight: 900;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    padding-top: 0.2em;
+}
+
+.votos {
+    color: var(--cinza);
+    font-size: 14px;
+    font-weight: 900;
+    padding-top: 0.2em;
+}
+
+.acabou {
+    color: var(--vermelho);
+    font-size: 14px;
+    font-weight: 900;
+    padding-top: 0.2em;
+    padding-left: 4em;
+}
+
+.estrela-vazia {
+    padding-right: 0.5em;
+}
+
+
+@media screen and (min-width: 1024px) {
+
+    .cardapio {
+        margin: 8em 9.5em;
+    }
+
+    .vetor-cardapio {
+        background-position: 80%;
+    }
+
+    .titulo {
+        padding: 2em 1em 0.3em 2em;
+    }
+    
+    .texto {
+        padding: 0 7em 0 7em;
+    }
+    
+    .botoes {
+        padding-bottom: 1em;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        align-content: center;
+        justify-content: space-between;
+        padding-right: 5em;
+        padding-left: 5em;
+    }
+
+}
+
+
+@media screen and (min-width: 1280px) {
+
+    .cardapio {
+        margin: 8em 15em;
+    }
+
+    .vetor-cardapio {
+        background-position: 62%;
+    }
+    
+    .texto {
+        padding: 0 28em 0 28em;
+    }
+    
+    .container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        align-content: center;
+        justify-content: space-between;
+        padding-right: 15em;
+        padding-left: 15em;
+    }
+
+}
